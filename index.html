@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1689d8">
+<title>Jowel Gella • 54th Birthday</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+  --blue:#118bd2; --sky:#6dd5f7; --navy:#063b69; --yellow:#ffd34f;
+  --orange:#ff8b4d; --pink:#ff6fae; --white:#fff; --pale:#eefaff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--pale);color:var(--navy);font-family:Poppins,Arial,sans-serif}
+.hero{
+  min-height:100svh;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,#69d8f7 0%,#1689d8 50%,#07549a 100%);
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;
+}
+.hero:before{width:340px;height:340px;background:#ffd34f;top:-170px;right:-90px}
+.hero:after{width:280px;height:280px;background:#ff6fae;bottom:-170px;left:-90px}
+.top{
+  position:absolute;z-index:4;top:0;left:0;right:0;padding:20px 20px;
+  display:flex;justify-content:space-between;align-items:center;color:#fff
+}
+.badge{
+  background:#ffffff28;border:1px solid #ffffff72;border-radius:30px;
+  padding:9px 14px;font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  backdrop-filter:blur(8px)
+}
+.chicken{font-size:31px;filter:drop-shadow(0 3px 3px #00345b55)}
+.hero-inner{
+  position:relative;z-index:2;min-height:100svh;display:flex;align-items:center;
+  justify-content:center;padding:80px 18px 38px
+}
+.invite-card{
+  width:min(900px,96%);display:grid;grid-template-columns:.9fr 1.1fr;gap:0;
+  background:#ffffffee;border-radius:34px;overflow:hidden;
+  box-shadow:0 25px 70px #00345b45;border:5px solid #ffffff88
+}
+.photo-wrap{min-height:600px;position:relative;overflow:hidden}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.photo-wrap:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 65%,#063b6955 100%)
+}
+.info{padding:46px 34px 38px;display:flex;flex-direction:column;justify-content:center}
+.sparkles{font-size:25px;letter-spacing:7px;color:var(--orange)}
+.pre{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-top:8px}
+h1{
+  font-family:"Baloo 2",cursive;font-size:clamp(55px,9vw,92px);line-height:.82;
+  margin:12px 0 5px;color:var(--navy);font-weight:800;letter-spacing:-2px
+}
+.age{font-family:"Baloo 2",cursive;font-size:31px;color:var(--pink);font-weight:700}
+.date{
+  margin:17px 0 18px;background:linear-gradient(90deg,var(--blue),#32b8e9);
+  color:#fff;border-radius:17px;padding:14px 17px;font-weight:700;font-size:15px;
+  box-shadow:0 8px 18px #118bd233
+}
+.meta{display:grid;gap:9px}
+.meta div{
+  border-radius:15px;background:#eaf8ff;padding:12px 14px;font-size:12px;color:#245675;
+  border-left:5px solid var(--sky)
+}
+.meta div:nth-child(2){border-left-color:var(--yellow)}
+.meta div:nth-child(3){border-left-color:var(--pink)}
+.open{
+  align-self:flex-start;margin-top:20px;border:0;border-radius:30px;padding:15px 22px;
+  background:linear-gradient(90deg,var(--orange),#ffb23e);color:#fff;font-weight:700;
+  cursor:pointer;box-shadow:0 9px 18px #ff8b4d45
+}
+.gallery-section{padding:68px 16px;background:#fff}
+.section-title{
+  text-align:center;font-family:"Baloo 2",cursive;font-size:clamp(40px,7vw,62px);
+  line-height:1;color:var(--navy);margin:0 0 9px
+}
+.section-line{
+  width:90px;height:7px;border-radius:10px;margin:0 auto 30px;
+  background:linear-gradient(90deg,var(--blue),var(--pink),var(--yellow))
+}
+.gallery{
+  max-width:1100px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr .9fr;
+  grid-auto-rows:230px;gap:13px
+}
+.gallery img{
+  width:100%;height:100%;object-fit:cover;border-radius:22px;display:block;
+  box-shadow:0 10px 25px #0b4f7b1c
+}
+.gallery img:nth-child(1){grid-row:span 2}
+.gallery img:nth-child(4){grid-row:span 2}
+.details{
+  padding:70px 18px;text-align:center;
+  background:linear-gradient(135deg,#07549a 0%,#118bd2 55%,#5bd5ef 100%);
+  color:#fff;position:relative;overflow:hidden
+}
+.details:before{content:"🌴   🐓   🎉";position:absolute;top:15px;left:0;right:0;font-size:24px;opacity:.45;letter-spacing:18px}
+.details h2{font-family:"Baloo 2",cursive;font-size:clamp(40px,7vw,62px);margin:0 0 28px}
+.cards{max-width:900px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{
+  background:#ffffff19;border:1px solid #ffffff45;border-radius:18px;padding:21px 13px;
+  backdrop-filter:blur(6px)
+}
+.card b{display:block;color:#ffe17a;font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.card span{font-size:13px;line-height:1.6}
+.music{margin-top:28px;font-size:12px;color:#eafaff}
+footer{background:#05345c;color:#bfeaff;text-align:center;padding:19px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+@media(max-width:800px){
+  .invite-card{grid-template-columns:1fr}
+  .photo-wrap{min-height:470px;height:55svh;max-height:620px}
+  .info{padding:35px 25px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:260px}
+  .gallery img:nth-child(1),.gallery img:nth-child(4){grid-row:span 1}
+  .cards{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .photo-wrap{height:58svh;min-height:400px}
+  .gallery{grid-template-columns:1fr;grid-auto-rows:360px}
+  .gallery img{height:100%}
+  .hero-inner{padding-top:70px}
+}
+
+/* Opening screen */
+.opening{
+  position:fixed;inset:0;z-index:100;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 15% 15%,#ffd34f 0 3%,transparent 3.5%),
+    radial-gradient(circle at 85% 18%,#ff6fae 0 4%,transparent 4.5%),
+    linear-gradient(135deg,#65d9f7 0%,#178fd6 48%,#075399 100%);
+  transition:opacity .8s ease,visibility .8s ease;
+}
+.opening.hide{opacity:0;visibility:hidden;pointer-events:none}
+.opening:before,.opening:after{
+  content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.6
+}
+.opening:before{width:300px;height:300px;background:#ff8b4d;left:-130px;bottom:-110px}
+.opening:after{width:340px;height:340px;background:#ffe05e;right:-150px;top:-130px}
+.opening-card{
+  position:relative;z-index:2;width:min(88%,570px);text-align:center;
+  padding:48px 25px 42px;border-radius:36px;
+  background:#ffffffed;box-shadow:0 25px 75px #003b6b55;
+  border:5px solid #ffffff8c;
+}
+.opening-chicken{font-size:58px;line-height:1;margin-bottom:9px}
+.opening-small{
+  color:#168bd3;font-size:11px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase
+}
+.opening-title{
+  font-family:"Baloo 2",cursive;font-weight:800;color:#063b69;
+  font-size:clamp(43px,10vw,70px);line-height:.9;margin:12px 0 8px
+}
+.opening-date{
+  color:#ff6fae;font-family:"Baloo 2",cursive;font-weight:700;
+  font-size:24px;margin-bottom:23px
+}
+.open-invitation{
+  border:0;border-radius:40px;padding:17px 28px;
+  background:linear-gradient(90deg,#ff874e,#ffb63e);
+  color:#fff;font-family:Poppins,Arial,sans-serif;font-weight:700;
+  font-size:14px;cursor:pointer;box-shadow:0 12px 25px #ff8b4d55;
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.open-invitation:hover{transform:translateY(-2px);box-shadow:0 16px 30px #ff8b4d66}
+.open-hint{margin-top:13px;color:#66849a;font-size:10px}
+
+</style>
+</head>
+<body>
+
+<div class="opening" id="opening">
+  <div class="opening-card">
+    <div class="opening-chicken">🐓</div>
+    <div class="opening-small">A special celebration awaits</div>
+    <div class="opening-title">Jowel Gella</div>
+    <div class="opening-date">54th Birthday • August 22, 2026</div>
+    <button class="open-invitation" id="enterInvitation">✨ CLICK TO OPEN INVITATION ✨</button>
+    <div class="open-hint">Tap to enter the celebration</div>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="top">
+    <div class="badge">You're Invited</div>
+    <div class="chicken">🐓</div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="invite-card">
+      <div class="photo-wrap">
+        <img src="photo3.jpeg" alt="">
+      </div>
+      <div class="info">
+        <div class="sparkles">✦ ✦ ✦</div>
+        <div class="pre">A special birthday celebration</div>
+        <h1>Jowel<br>Gella</h1>
+        <div class="age">54th Birthday</div>
+        <div class="date">📅 AUGUST 22, 2026</div>
+        <div class="meta">
+          <div>📍 Iyasan, Guimbal, Iloilo</div>
+          <div>🏡 Gella Residents</div>
+          <div>👕 Attire: Anything</div>
+        </div>
+        <button class="open" id="open">▶ Open Invitation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <h2 class="section-title">Celebrating Jowel</h2>
+  <div class="section-line"></div>
+  <div class="gallery">
+    <img src="photo1.jpeg" alt="">
+    <img src="photo2.jpeg" alt="">
+    <img src="photo3.jpeg" alt="">
+    <img src="photo4.jpeg" alt="">
+    <img src="photo5.jpeg" alt="">
+  </div>
+</section>
+
+<section class="details">
+  <h2>See You There! 🎉</h2>
+  <div class="cards">
+    <div class="card"><b>Name</b><span>Jowel Gella</span></div>
+    <div class="card"><b>Age</b><span>54th Birthday</span></div>
+    <div class="card"><b>Date</b><span>August 22, 2026</span></div>
+    <div class="card"><b>Location</b><span>Iyasan, Guimbal, Iloilo<br>Gella Residents</span></div>
+    <div class="card"><b>Attire</b><span>Anything</span></div>
+  </div>
+  <div class="music">🎵 Sunflower — Post Malone &amp; Swae Lee</div>
+</section>
+
+<footer>Jowel Gella • August 22, 2026</footer>
+
+
+<!-- Music player: the visitor's tap starts the embedded YouTube video. -->
+<div id="musicBox" style="
+  position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+  z-index:20;width:min(92vw,360px);padding:10px 12px;border-radius:18px;
+  background:rgba(6,59,105,.94);box-shadow:0 10px 35px rgba(0,40,80,.35);
+  color:#fff;font:600 12px Poppins,Arial,sans-serif;text-align:center;
+  display:none;">
+  <div style="margin-bottom:7px">🎵 Sunflower — Post Malone &amp; Swae Lee</div>
+  <iframe id="musicFrame" width="100%" height="56"
+    src=""
+    title="Sunflower music player"
+    frameborder="0"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    style="border-radius:12px;display:block"></iframe>
+</div>
+
+<script>
+(function(){
+  const openBtn = document.getElementById("open");
+  const box = document.getElementById("musicBox");
+  const frame = document.getElementById("musicFrame");
+  let started = false;
+
+  openBtn.addEventListener("click", function(){
+    if(started) return;
+    started = true;
+
+    // Start only after the visitor's direct tap, which is the most
+    // reliable way to satisfy mobile browser autoplay policies.
+    frame.src =
+      "https://www.youtube.com/embed/ApXoWvfEYVU" +
+      "?autoplay=1&playsinline=1&rel=0&modestbranding=1";
+
+    box.style.display = "block";
+    openBtn.textContent = "♪ Music Playing";
+    openBtn.disabled = true;
+    openBtn.style.opacity = ".85";
+  });
+})();
+</script>
+
+
+<script>
+(function(){
+  const opening = document.getElementById("opening");
+  const enter = document.getElementById("enterInvitation");
+  const heroOpen = document.getElementById("open");
+
+  enter.addEventListener("click", function(){
+    opening.classList.add("hide");
+    // Scroll to the top of the actual invitation.
+    window.scrollTo({top:0, behavior:"smooth"});
+    // Give the music player one user gesture to start.
+    if (heroOpen) heroOpen.click();
+  });
+})();
+</script>
+
+</html>
